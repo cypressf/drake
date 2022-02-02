@@ -47,7 +47,6 @@ def _gfortran_impl(repo_ctx):
             "-L{}".format(repo_ctx.path(libquadmath_path).dirname),
             "-ldl",
             "-lgfortran",
-            "-lquadmath",
         ]
     else:
         repo_ctx.symlink(libgfortran_path, libgfortran)
